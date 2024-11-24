@@ -1,0 +1,106 @@
+<!--
+  Nombre:   Guillermo Meléndez Montero
+  Fecha:    21/11/2024
+  Modulo:   LMGSI
+  UD:       UD2 Desarrollo web con HTML5 y CSS3.
+  Tarea:    Tarea Evalautiva 2. Sitio web.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+    <!--Encabezado común a todas las webs.Imagen de fondo y encima el titulo.-->
+    <header class="header">
+
+        <img class="header-img" src="Imagenes/FotoVeneciaPortada.jpg" alt="VeneciaPortada">
+
+        <h1>Sapore Veneto</h1>
+
+    </header>
+
+    <nav>
+        <!--Menu de navegación, o categorías, con los link al resto de html.-->
+        <dl>
+            <dd><a href="index.html"> INICIO</a></dd>
+            <dd><a href="Noticias.html"> NOTICIAS</a></dd>
+            <dd><a href="Recetas.html"> RECETAS</a></dd>
+            <dd><a href="Contacto.html"> CONTACTO</a></dd>
+        </dl>
+    </nav>
+
+    <section>
+        <!--Contenido de la pagina contacto.-->
+        <h3>CONTACTO</h3>
+
+        <article>
+            <!--Lista con las redes sociales y sus links.-->
+            <h4>REDES SOCIALES</h4>
+
+            <dl class="clase-imagenes">
+                <dd><a href="https://x.com/?lang=es"><img src="Imagenes/Twitter.png"></a></dd>
+                <dd><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_ES"><img src="Imagenes/facebook.png"></a></dd>
+                <dd><a href="https://www.instagram.com/"><img src="Imagenes/instagram.png"></a></dd>
+                <dd><a href="https://www.tiktok.com/es/"><img src="Imagenes/tik-tok.png"></a></dd>
+            </dl>
+
+
+        </article>
+
+        <article>
+            <!--Formulario de contacto.-->
+            <h4>DUDAS/CONSULTAS/SUGERENCIAS</h4>
+            
+            <form action="mailto:gmelendez@birt.eus" method="post">
+                <fieldset>
+                    <legend><h5>Formulario</h5></legend>
+
+                    <label>Nombre:</label>
+                    <input class="ancho-campo" type="text" name="nombre">
+
+                    <label>Apellidos:</label>
+                    <input class="ancho-campo" type="text" name="apellidos">
+
+                    <label>E-mail:</label>
+                    <input class="ancho-campo" type="text" name="e-mail">
+
+                    <label>Motivo:</label>
+                    <select class="ancho-campo" name="motivo">
+                        <option value="duda">DUDA</option>
+                        <option value="consulta">CONSULTA</option>
+                        <option value="sugerencia">SUGERENCIA</option>
+                    </select>
+
+                    <label>Mensaje:</label>
+                    <textarea class="ancho-campo" rows="5" cols="100" name="mensaje"></textarea><br>
+
+                    <input type="submit" value="Enviar"><br>
+
+                    <label class="ancho-campo">¿Qué día nos has descubierto?</label>
+                    <input type="date" list="items" value="2024-11-28">
+                    <datalist id="items">
+                      <option value="2024-11-28">28 de Noviembre</option>
+                      <option value="2024-11-29">29 de Noviembre</option>
+                      <option value="2024-11-30">30 de Noviembre</option>
+                    </datalist>
+
+                </fieldset>
+            </form>
+        </article>
+
+    </section>
+
+    <footer>
+        <!--Pie de pagina. Autoría, licencia y atribución de recursos.-->
+        <p>SAPORE VENETO</p>
+        <p>Guillermo Melendez Montero. Pagina realizada con fines educativos.</p>
+        <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+        <p>Todos los derechos de las imágenes estan reservados y pertenecen a sus autores</p>
+    </footer>
+</body>
+</html>

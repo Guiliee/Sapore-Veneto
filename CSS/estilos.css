@@ -1,0 +1,273 @@
+/*
+    Nombre:   Guillermo Meléndez Montero
+    Fecha:    21/11/2024
+    Modulo:   LMGSI
+    UD:       UD2 Desarrollo web con HTML5 y CSS3.
+    Tarea:    Tarea Evalautiva 2. Sitio web.
+*/
+
+/*Aspectos generales y comunes a todas los html*/
+
+/* Tipografia importada para texto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+/*Cuerpo */
+body{
+    background-color:rgb(38, 36, 36);
+}
+
+/*Encabezado */
+header{
+    display: flex;
+    justify-content: center;
+}
+
+/*Clase para imagen header*/
+.header-img {
+    width: 60%;
+    position: absolute;
+}
+
+/*Titulo header*/
+header h1 {
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 10rem;
+    position: relative;
+    z-index: 1;
+}
+
+/*Menu navegacion*/
+nav {
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
+/*Estilo para las categorias*/
+nav dl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.25rem;
+}
+
+/*Eliminacion del margen que automaticamente presenta dd*/
+dd {
+    margin-inline-start: 0%;
+}
+
+/*Hipervinculos*/
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Menú section*/
+section {
+    margin-top: 2%;
+    margin-left: 19.5%;
+    margin-right: 19.5%;
+    background-color: rgb(83, 76, 76);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    border-radius: 5px;
+}
+
+/*Estilo para titulo h3*/
+section h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/*Estilo para titulo h4*/
+section h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    color: white;
+    text-align: center;
+}
+
+/*Estilo para titulo h5*/
+section h5{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    color: white;
+    text-align: center;
+}
+
+/*Estilo para texto*/
+section p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+
+/*Footer*/
+footer {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/*Estilo para texto de footer*/
+footer p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+/*Formulario */
+
+/*Clase para el ancho del campo de escritura dle formulario*/
+.ancho-campo {
+    width: 80%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+/*Estilo para el formulario*/
+ form {
+    text-align: center;
+ }
+
+ /*Estilo para los nombres del campo del formualrio*/
+ label {
+    display: flex;
+    justify-content: left;
+    padding-left: 100px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: white;
+ }
+
+ /*Estilo para añadir espacio debajo del formulario*/
+ fieldset{
+    padding-bottom: 3%;
+ }
+
+
+
+
+ /*Recetas*/
+
+ /*Clase para redimensionar las imagenes de las recetas*/
+.redimension-imagen {
+    width: 190px;
+    height: 190px;
+}
+
+/*Clase para ordenar las imagenes de las recetas en una linea*/
+.clase-imagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+
+}
+
+/*Clase para los nombre de las recetas que aparecen debajo de las imagenes*/
+.nombre-recetas{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+
+
+/*Tiramisu*/
+
+/*Clase para la imagen de la recete desarrollada*/
+.imagen-tiramisu {
+    float: right;
+    width: 400px;
+    height: 400px;
+    padding-top: 40px;
+    padding-right: 40px;
+}
+
+/*Estilo para la lista de ingredientes*/
+ul {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: white;
+}
+
+/*Estilo para el modo de preparación*/
+ol {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: white;
+}
+
+
+
+
+/*Noticias*/
+
+/*Clase para redimensionar las imagenes de las noticias*/
+.redimension-imagen-noticias{
+    width: 190px;
+    height: 190px;
+    margin-right: 5%;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    float: left;
+}
+
+/*Clase para el estilo de los titulos de las noticias*/
+.titulo-noticias {
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 2%;
+}
+
+/*Clase para el estilo del contenido de las noticias*/
+.texto-noticias {
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+/*Clase para finalizar el float*/
+.fin-float{
+    clear: both;
+}

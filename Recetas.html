@@ -1,0 +1,79 @@
+<!--
+  Nombre:   Guillermo Meléndez Montero
+  Fecha:    21/11/2024
+  Modulo:   LMGSI
+  UD:       UD2 Desarrollo web con HTML5 y CSS3.
+  Tarea:    Tarea Evalautiva 2. Sitio web.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+    <!--Encabezado común a todas las webs.Imagen de fondo y encima el titulo.-->
+    <header class="header">
+
+        <img class="header-img" src="Imagenes/FotoVeneciaPortada.jpg" alt="VeneciaPortada">
+
+        <h1>Sapore Veneto</h1>
+
+    </header>
+
+    <nav>
+        <!--Menu de navegación, o categorías, con los link al resto de html.-->
+        <dl>
+            <dd><a href="index.html"> INICIO</a></dd>
+            <dd><a href="Noticias.html"> NOTICIAS</a></dd>
+            <dd><a href="Recetas.html"> RECETAS</a></dd>
+            <dd><a href="Contacto.html"> CONTACTO</a></dd>
+        </dl>
+    </nav>
+
+    <section>
+
+        <h3>RECETAS</h3>
+
+        <article>
+            <!--Lista de imagenes con las recetas y sus títulos.-->
+            
+            <dl class="clase-imagenes">
+                <!--Añado un div aquí para asociar la imagen con su titulo debajo.-->
+                <div>
+                    <dd><img class="redimension-imagen" src="Imagenes/Polenta.jpg"></dd>
+                    <p class="nombre-recetas">Polenta a la schie</p>
+                </div>
+
+                <div>
+                    <dd><img class="redimension-imagen" src="Imagenes/Risotto.jpg"></dd>
+                    <p class="nombre-recetas">Risotto fruti di mare</p>
+                </div>
+
+                <div>
+                    <dd><img class="redimension-imagen" src="Imagenes/Spaghetti.jpg"></dd>
+                    <p class="nombre-recetas">Spaghetti vongole</p>
+                </div>
+
+                <div>
+                    <dd><a href="Tiramisu.html"><img class="redimension-imagen" src="Imagenes/Tiramisu.jpg"></a></dd>
+                    <p class="nombre-recetas"><a href="Tiramisu.html">Tiramisu</a></p>
+                </div>
+
+            </dl>
+        </article>
+
+    </section>
+
+    <footer>
+        <!--Pie de pagina. Autoría, licencia y atribución de recursos.-->
+        <p>SAPORE VENETO</p>
+        <p>Guillermo Melendez Montero. Pagina realizada con fines educativos.</p>
+        <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+        <p>Todos los derechos de las imágenes estan reservados y pertenecen a sus autores</p>
+    </footer>
+</body>
+</html>
